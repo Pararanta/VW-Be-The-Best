@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "A4pQ7LuCENxdfWJkLMHECXAwVh4QxfHg5UkXAhAALegO8Jap/5i7gKa7vjkmqAbLwrC6LUzva+FWYpsXbOHYIA==",
+  "dgSpecHash": "JnpCRXfv6NJlEx5R+IkGO15CCezXDQi0dofn3/jh3N5zoSP+XmvyHMb2PE53kqJ0gQsh2RL8WFeXZrpvof1xwg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Konrad\\Desktop\\VW\\VW.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Konrad\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\npoi\\2.5.3\\npoi.2.5.3.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\portable.bouncycastle\\1.8.6\\portable.bouncycastle.1.8.6.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\Konrad\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

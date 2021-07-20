@@ -43,7 +43,13 @@ namespace VW.Service.KUKA
                         index2 = indexes[1];
                     }
                     if(name != null && index1 != null && (match = point_index_regex.Match(line)).Success){
-                        program_points.Add(new ProgramPoint(name, int.Parse(match.Value), index1, index2));
+                        program_points.Add(new ProgramPoint(
+                            Regex.Replace(name, "_", ""),
+                            name,
+                            int.Parse(match.Value),
+                            index1,
+                            index2
+                            ));
                         name = null;
                         index1 = null;
                         index2 = null;
