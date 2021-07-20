@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "version": 2,
   "dgSpecHash": "JnpCRXfv6NJlEx5R+IkGO15CCezXDQi0dofn3/jh3N5zoSP+XmvyHMb2PE53kqJ0gQsh2RL8WFeXZrpvof1xwg==",
@@ -17,4 +18,13 @@
     "C:\\Users\\Konrad\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
   ],
   "logs": []
+=======
+{
+  "version": 2,
+  "dgSpecHash": "dk01fFw+IBN/x02laxFnQmmJMcproE00WlCaZLByaa3ZHERMYe1noiIevFGRaSLNMxdBogrxWzOrwS5jr77biw==",
+  "success": true,
+  "projectFilePath": "/home/kubano/Downloads/VW-Be-The-Best/VW.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+>>>>>>> Stashed changes
 }

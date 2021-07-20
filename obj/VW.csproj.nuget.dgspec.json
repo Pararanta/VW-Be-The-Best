@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "format": 1,
   "restore": {
@@ -69,4 +70,65 @@
       }
     }
   }
+=======
+{
+  "format": 1,
+  "restore": {
+    "/home/kubano/Downloads/VW-Be-The-Best/VW.csproj": {}
+  },
+  "projects": {
+    "/home/kubano/Downloads/VW-Be-The-Best/VW.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kubano/Downloads/VW-Be-The-Best/VW.csproj",
+        "projectName": "VW",
+        "projectPath": "/home/kubano/Downloads/VW-Be-The-Best/VW.csproj",
+        "packagesPath": "/home/kubano/.nuget/packages/",
+        "outputPath": "/home/kubano/Downloads/VW-Be-The-Best/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kubano/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/kubano/dotnet/sdk/6.0.100-preview.6.21355.2/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+>>>>>>> Stashed changes
 }

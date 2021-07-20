@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\VW.exe
 C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\VW.deps.json
 C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\VW.runtimeconfig.json
@@ -30,3 +31,36 @@ C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\Micro
 C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll
 C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll
 C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+=======
+C:/Users/Konrad/Desktop/VW/bin/Debug/net6.0/VW.exe
+C:/Users/Konrad/Desktop/VW/bin/Debug/net6.0/VW.deps.json
+C:/Users/Konrad/Desktop/VW/bin/Debug/net6.0/VW.runtimeconfig.json
+C:/Users/Konrad/Desktop/VW/bin/Debug/net6.0/VW.runtimeconfig.dev.json
+C:/Users/Konrad/Desktop/VW/bin/Debug/net6.0/VW.dll
+C:/Users/Konrad/Desktop/VW/bin/Debug/net6.0/ref/VW.dll
+C:/Users/Konrad/Desktop/VW/bin/Debug/net6.0/VW.pdb
+C:/Users/Konrad/Desktop/VW/obj/Debug/net6.0/VW.csprojAssemblyReference.cache
+C:/Users/Konrad/Desktop/VW/obj/Debug/net6.0/VW.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Konrad/Desktop/VW/obj/Debug/net6.0/VW.AssemblyInfoInputs.cache
+C:/Users/Konrad/Desktop/VW/obj/Debug/net6.0/VW.AssemblyInfo.cs
+C:/Users/Konrad/Desktop/VW/obj/Debug/net6.0/VW.csproj.CoreCompileInputs.cache
+C:/Users/Konrad/Desktop/VW/obj/Debug/net6.0/VW.dll
+C:/Users/Konrad/Desktop/VW/obj/Debug/net6.0/ref/VW.dll
+C:/Users/Konrad/Desktop/VW/obj/Debug/net6.0/VW.pdb
+C:/Users/Konrad/Desktop/VW/obj/Debug/net6.0/VW.genruntimeconfig.cache
+/home/kubano/Downloads/VW-Be-The-Best/bin/Debug/net6.0/VW
+/home/kubano/Downloads/VW-Be-The-Best/bin/Debug/net6.0/VW.deps.json
+/home/kubano/Downloads/VW-Be-The-Best/bin/Debug/net6.0/VW.runtimeconfig.json
+/home/kubano/Downloads/VW-Be-The-Best/bin/Debug/net6.0/VW.dll
+/home/kubano/Downloads/VW-Be-The-Best/bin/Debug/net6.0/ref/VW.dll
+/home/kubano/Downloads/VW-Be-The-Best/bin/Debug/net6.0/VW.pdb
+/home/kubano/Downloads/VW-Be-The-Best/obj/Debug/net6.0/VW.csproj.AssemblyReference.cache
+/home/kubano/Downloads/VW-Be-The-Best/obj/Debug/net6.0/VW.GeneratedMSBuildEditorConfig.editorconfig
+/home/kubano/Downloads/VW-Be-The-Best/obj/Debug/net6.0/VW.AssemblyInfoInputs.cache
+/home/kubano/Downloads/VW-Be-The-Best/obj/Debug/net6.0/VW.AssemblyInfo.cs
+/home/kubano/Downloads/VW-Be-The-Best/obj/Debug/net6.0/VW.csproj.CoreCompileInputs.cache
+/home/kubano/Downloads/VW-Be-The-Best/obj/Debug/net6.0/VW.dll
+/home/kubano/Downloads/VW-Be-The-Best/obj/Debug/net6.0/ref/VW.dll
+/home/kubano/Downloads/VW-Be-The-Best/obj/Debug/net6.0/VW.pdb
+/home/kubano/Downloads/VW-Be-The-Best/obj/Debug/net6.0/VW.genruntimeconfig.cache
+>>>>>>> Stashed changes
