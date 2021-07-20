@@ -1,0 +1,16 @@
+C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\VW.exe
+C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\VW.deps.json
+C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\VW.runtimeconfig.json
+C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\VW.runtimeconfig.dev.json
+C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\VW.dll
+C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\ref\VW.dll
+C:\Users\Konrad\Desktop\VW\bin\Debug\net6.0\VW.pdb
+C:\Users\Konrad\Desktop\VW\obj\Debug\net6.0\VW.csprojAssemblyReference.cache
+C:\Users\Konrad\Desktop\VW\obj\Debug\net6.0\VW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Konrad\Desktop\VW\obj\Debug\net6.0\VW.AssemblyInfoInputs.cache
+C:\Users\Konrad\Desktop\VW\obj\Debug\net6.0\VW.AssemblyInfo.cs
+C:\Users\Konrad\Desktop\VW\obj\Debug\net6.0\VW.csproj.CoreCompileInputs.cache
+C:\Users\Konrad\Desktop\VW\obj\Debug\net6.0\VW.dll
+C:\Users\Konrad\Desktop\VW\obj\Debug\net6.0\ref\VW.dll
+C:\Users\Konrad\Desktop\VW\obj\Debug\net6.0\VW.pdb
+C:\Users\Konrad\Desktop\VW\obj\Debug\net6.0\VW.genruntimeconfig.cache
