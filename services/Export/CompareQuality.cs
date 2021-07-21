@@ -1,5 +1,6 @@
 using System;
 using VW.Models;
+using System.Linq;
 using System.Collections.Generic;
 
 
@@ -21,7 +22,7 @@ namespace VW.Service.Export
           //point from excel
          
 
-        public Qualitative_compare(Dictionary<string,List<Point>>  robot_dic,Dictionary<string,List<Point>>  excel_dic){
+        public Qualitative_compare(Dictionary<string,List<Point>> robot_dic,Dictionary<string,List<Point>> excel_dic){
             //for for excel dic
               //P0001_A__0210_000100_R
 
@@ -29,11 +30,13 @@ namespace VW.Service.Export
 
              foreach(var element_in_robot_dic in robot_dic){
              Qualitative_point_result temp_qualitative_point;
+             Deviation_massage deviation_massage = new Deviation_massage(-1,"nie znaleziono w UAF");
                 //Console.WriteLine(element_in_robot_dic.Key);
  
                 if(excel_dic.ContainsKey(element_in_robot_dic.Key)){
                     List<Point> control_list = new List<Point>();
                     control_list = excel_dic[element_in_robot_dic.Key];
+                    
                     
                     foreach(var real_point in element_in_robot_dic.Value){
                         foreach( Point expected_point in control_list){
@@ -57,7 +60,7 @@ namespace VW.Service.Export
                                  
                                 double point_deviation = Math.Sqrt((temp_y*temp_y)+(temp_z*temp_y));
 
-                                Deviation_massage deviation_massage = new Deviation_massage(-1,"brak");
+                                
 
                                 // Console.Write("point_deviation : ");
                                 // Console.WriteLine(point_deviation);
@@ -108,14 +111,19 @@ namespace VW.Service.Export
                     //     Console.WriteLine(real_point.index2);
                     // }
                 }
-                else Console.Write("nie znaleziono\n");
+                else {
+                    
+                    temp_qualitative_point = new Qualitative_point_result(deviation_massage,element_in_robot_dic.Value.First());
+                    qualitative_list_result.Add(temp_qualitative_point);
+                    total_elements++;
+                }
                        
             }
 
-             Console.WriteLine("Ilość elementów : " + total_elements.ToString());
-             Console.WriteLine("Ilość elementów w granicach błędu : " + normal_counter.ToString());
-             Console.WriteLine("Ilość elementów z ostrzeżeniami : " + warning_counter.ToString());
-             Console.WriteLine("Ilość elementów z błędami : " + error_counter.ToString());
+            //  Console.WriteLine("Ilość elementów : " + total_elements.ToString());
+            //  Console.WriteLine("Ilość elementów w granicach błędu : " + normal_counter.ToString());
+            //  Console.WriteLine("Ilość elementów z ostrzeżeniami : " + warning_counter.ToString());
+            //  Console.WriteLine("Ilość elementów z błędami : " + error_counter.ToString());
         }
     }
 }

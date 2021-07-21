@@ -16,17 +16,10 @@ namespace VW
 
             export.fill_robot_dictionary(robot.getAllPoints());
             export.fill_excel_dictionary(UAF.readUAF(@"./zip_folder/UAF.xlsx")); 
+            Qualitative_compare qualitative_compare = new Qualitative_compare(export.robot_dic,export.excel_dic);
 
            //Qualitative_compare.qualitative_compare(export.robot_dic,export.excel_dic);
-           Qualitative_compare qualitative_compare = new Qualitative_compare(export.robot_dic,export.excel_dic);
-
-foreach(var quli in qualitative_compare.qualitative_list_result){
-    Console.WriteLine("---------");
-    Console.WriteLine(quli.point.name);
-    Console.WriteLine(quli.deviation_massage.massage);
-
-}
-           Console.WriteLine(qualitative_compare.error_counter);
+           Excel_Export_Qualitative.writeQualitative(qualitative_compare);
 
            
             // foreach(Point point in robot.getAllPoints()){
