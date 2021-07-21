@@ -27,7 +27,7 @@ namespace VW.Service.Export
         }
          public void fill_robot_dictionary(List<Point> points_list_robot){
             robot_dic = make_dic(points_list_robot);
-        }
+        }   
 
     }
 }

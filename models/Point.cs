@@ -39,7 +39,9 @@ namespace VW.Models
         }
 
         public override string ToString(){
-            return name + "/" + original_name + " (" + index1 + "-" + index2 + ") (" + x + ", " + y + ", " + z + ")";
+            //return name + " (" + index1 + "-" + index2 + ") (" + x + ", " + y + ", " + z + ")";
+            //return name + "/" + original_name + " (" + index1 + "-" + index2 + ") (" + x + ", " + y + ", " + z + ")";
+            return name + " (" + index1 + "-" + index2 + ") (" + x + ", " + y + ", " + z + ")";
         }
     }
 }

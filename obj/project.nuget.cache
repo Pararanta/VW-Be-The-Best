@@ -1,30 +1,27 @@
-<<<<<<< Updated upstream
 {
   "version": 2,
-  "dgSpecHash": "JnpCRXfv6NJlEx5R+IkGO15CCezXDQi0dofn3/jh3N5zoSP+XmvyHMb2PE53kqJ0gQsh2RL8WFeXZrpvof1xwg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Konrad\\Desktop\\VW\\VW.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Konrad\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
-    "C:\\Users\\Konrad\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
-    "C:\\Users\\Konrad\\.nuget\\packages\\npoi\\2.5.3\\npoi.2.5.3.nupkg.sha512",
-    "C:\\Users\\Konrad\\.nuget\\packages\\portable.bouncycastle\\1.8.6\\portable.bouncycastle.1.8.6.nupkg.sha512",
-    "C:\\Users\\Konrad\\.nuget\\packages\\sharpziplib\\1.2.0\\sharpziplib.1.2.0.nupkg.sha512",
-    "C:\\Users\\Konrad\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
-    "C:\\Users\\Konrad\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512",
-    "C:\\Users\\Konrad\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
-    "C:\\Users\\Konrad\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
-    "C:\\Users\\Konrad\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
-    "C:\\Users\\Konrad\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
-  ],
-  "logs": []
-=======
-{
-  "version": 2,
-  "dgSpecHash": "dk01fFw+IBN/x02laxFnQmmJMcproE00WlCaZLByaa3ZHERMYe1noiIevFGRaSLNMxdBogrxWzOrwS5jr77biw==",
+  "dgSpecHash": "j49C91E/jE1YPvlTlAd7h85iHSF3bJ+qMWEm5nAM0EksZsrvGCd0fWU1azSnXbeMXU9CB9vocZt6By/kbQaA+Q==",
   "success": true,
   "projectFilePath": "/home/kubano/Downloads/VW-Be-The-Best/VW.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
->>>>>>> Stashed changes
+  "expectedPackageFiles": [
+    "/home/kubano/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "/home/kubano/.nuget/packages/microsoft.win32.systemevents/4.5.0/microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "/home/kubano/.nuget/packages/npoi/2.5.3/npoi.2.5.3.nupkg.sha512",
+    "/home/kubano/.nuget/packages/portable.bouncycastle/1.8.6/portable.bouncycastle.1.8.6.nupkg.sha512",
+    "/home/kubano/.nuget/packages/sharpziplib/1.2.0/sharpziplib.1.2.0.nupkg.sha512",
+    "/home/kubano/.nuget/packages/system.configuration.configurationmanager/4.5.0/system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "/home/kubano/.nuget/packages/system.drawing.common/4.5.0/system.drawing.common.4.5.0.nupkg.sha512",
+    "/home/kubano/.nuget/packages/system.security.accesscontrol/4.5.0/system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "/home/kubano/.nuget/packages/system.security.cryptography.protecteddata/4.5.0/system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "/home/kubano/.nuget/packages/system.security.permissions/4.5.0/system.security.permissions.4.5.0.nupkg.sha512",
+    "/home/kubano/.nuget/packages/system.security.principal.windows/4.5.0/system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /home/kubano/Downloads/VW-Be-The-Best/obj/project.nuget.cache : Unexpected character encountered while parsing value: <. Path '', line 0, position 0."
+    }
+  ]
 }
