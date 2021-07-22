@@ -99,7 +99,7 @@ namespace VW.Service.Export
                 cell = row.CreateCell(5);
                 cell.SetCellValue(quali_res.deviation_massage.massage);
                 cell.CellStyle = styleMiddle;
-                
+                 
                 counter++;
                 
            }
