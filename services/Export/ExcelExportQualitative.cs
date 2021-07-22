@@ -29,30 +29,135 @@ namespace VW.Service.Export
 
             ISheet sheet = workbook.CreateSheet("My sheet");
 
+            IDataFormat dataformat = workbook.CreateDataFormat();
+            ICellStyle style = workbook.CreateCellStyle();
+            style.DataFormat = dataformat.GetFormat ( "0.00");
+
+
+            ICellStyle styleMiddle = workbook.CreateCellStyle();
+            styleMiddle.Alignment = HorizontalAlignment.Center;
+            styleMiddle.VerticalAlignment = VerticalAlignment.Center;
+
+
+
+            IRow row = sheet.CreateRow(0);
+
+                ICell cell = row.CreateCell(0);
+                cell.SetCellValue("Name");
+                cell.CellStyle = styleMiddle;
+
+                cell = row.CreateCell(1);
+                cell.SetCellValue("Y");
+                cell.CellStyle = styleMiddle;
+
+                cell = row.CreateCell(2);
+                cell.SetCellValue("Z");
+                cell.CellStyle = styleMiddle;
+                
+                cell = row.CreateCell(3);
+                cell.SetCellValue("Index");
+                cell.CellStyle = styleMiddle;
+
+                cell = row.CreateCell(4);
+                cell.SetCellValue("Point deviation");
+                cell.CellStyle = styleMiddle;
+
+                cell = row.CreateCell(5);
+                cell.SetCellValue("Massage");
+                cell.CellStyle = styleMiddle;
+                
+
 
 
             
             int counter = 1;
            foreach(var quali_res in quali_list_res){
-                IRow row = sheet.CreateRow(counter);
 
-                ICell cell = row.CreateCell(0);
+                row = sheet.CreateRow(counter);
+
+                cell = row.CreateCell(0);
                 cell.SetCellValue(quali_res.point.name);
 
                 cell = row.CreateCell(1);
                 cell.SetCellValue(quali_res.point.y);
+                cell.CellStyle = style;
 
                 cell = row.CreateCell(2);
                 cell.SetCellValue(quali_res.point.z);
+                cell.CellStyle = style;
 
-                cell = row.CreateCell(3);
-                cell.SetCellValue(quali_res.deviation_massage.point_deviation);
 
+                cell = row.CreateCell(3);   
+                cell.SetCellValue(quali_res.point.index1+quali_res.point.index2);
+                cell.CellStyle = styleMiddle;
+                
                 cell = row.CreateCell(4);
+                if(quali_res.deviation_massage.point_deviation!=-1)
+                cell.SetCellValue(quali_res.deviation_massage.point_deviation);
+                cell.CellStyle = style;
+
+                cell = row.CreateCell(5);
                 cell.SetCellValue(quali_res.deviation_massage.massage);
+                cell.CellStyle = styleMiddle;
+                
                 counter++;
                 
            }
+
+           counter++;
+
+           row = sheet.CreateRow(counter);
+
+                cell = row.CreateCell(0);
+                cell.SetCellValue("total elements: ");
+                
+                cell = row.CreateCell(1);
+                cell.SetCellValue(qualitative_result_obj.total_elements);
+
+            row = sheet.CreateRow(counter+1);
+
+                cell = row.CreateCell(0);
+                cell.SetCellValue("Small diviation: ");
+                
+                cell = row.CreateCell(1);
+                cell.SetCellValue(qualitative_result_obj.normal_counter);
+
+            row = sheet.CreateRow(counter+2);
+
+                cell = row.CreateCell(0);
+                cell.SetCellValue("warnings: ");
+                
+                cell = row.CreateCell(1);
+                cell.SetCellValue(qualitative_result_obj.warning_counter);
+
+            row = sheet.CreateRow(counter+3);
+
+                cell = row.CreateCell(0);
+                cell.SetCellValue("errors: ");
+                
+                cell = row.CreateCell(1);
+                cell.SetCellValue(qualitative_result_obj.error_counter);   
+                
+            row = sheet.CreateRow(counter+4);
+
+                cell = row.CreateCell(0);
+                cell.SetCellValue("No UPS data: ");
+                
+                cell = row.CreateCell(1);
+                cell.SetCellValue(qualitative_result_obj.no_UP_counter);
+
+            row = sheet.CreateRow(counter+5);
+
+                cell = row.CreateCell(0);
+                cell.SetCellValue("No UAF data: ");
+                
+                cell = row.CreateCell(1);
+                cell.SetCellValue(qualitative_result_obj.no_UAF_counter);
+
+
+
+; 
+
 
 
 for (int i = 0; i <= 20; i++) sheet.AutoSizeColumn(i);
