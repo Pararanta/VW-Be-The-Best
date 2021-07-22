@@ -13,11 +13,11 @@ namespace VW
             var export = new Export();
 
             export.fill_robot_dictionary(robot.getAllPoints());
-            export.fill_excel_dictionary(UAF.readUAF(@"./zip_folder/UAF.xlsx")); 
+            export.fill_excel_dictionary(UAF.readUAF(@"C:\Users\Konrad\Desktop\UAF.xlsx")); 
             Qualitative_compare qualitative_compare = new Qualitative_compare(export.robot_dic,export.excel_dic);
 
            //Qualitative_compare.qualitative_compare(export.robot_dic,export.excel_dic);
-           Excel_Export_Qualitative.writeQualitative(qualitative_compare);
+           Excel_Export_Qualitative.writeQualitative(qualitative_compare, @"C:\Users\Konrad\Desktop\outfile.xlsx");
         }
     }
 }
