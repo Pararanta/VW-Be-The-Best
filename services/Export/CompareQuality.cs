@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace VW.Service.Export
 {
-    class Qualitative_compare{
+    public class Qualitative_compare{
         public static string warning_massage = "ostrzeżenie";
         public static string error_massage = "błąd";
         public static string normal_massage = "w granicach błędu";

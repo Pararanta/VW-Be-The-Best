@@ -17,7 +17,7 @@ using NPOI.SS.UserModel;
 
 namespace VW.Service.Export
 {
-    class Excel_Export_Qualitative{
+    public class Excel_Export_Qualitative{
 
          public static void writeQualitative(Qualitative_compare qualitative_result_obj, string path){
             
