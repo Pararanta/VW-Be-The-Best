@@ -10,12 +10,12 @@ using VW.Models;
 
 namespace VW.Service.KUKA
 {
-    class Folgen
+    public class Folgen
     {
         Regex up_id_regex = new Regex(@"(?<=SEL_RES=SELECT\(#UP,)\d*", RegexOptions.IgnoreCase);
         Regex up_condition_regex = new Regex(@"(?<=,)[^,]*(?=\))", RegexOptions.IgnoreCase);
 
-        Dictionary<int, List<string>> ups = new Dictionary<int, List<string>>();
+        public Dictionary<int, List<string>> ups = new Dictionary<int, List<string>>();
 
         public void loadProgram(Stream file){
             using (var stream = new StreamReader(file)) {

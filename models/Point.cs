@@ -2,7 +2,7 @@ using System;
 
 namespace VW.Models
 {
-    class Point
+    public class Point
     {
         public float x;
         public float y;
@@ -39,9 +39,7 @@ namespace VW.Models
         }
 
         public override string ToString(){
-            //return name + " (" + index1 + "-" + index2 + ") (" + x + ", " + y + ", " + z + ")";
-            //return name + "/" + original_name + " (" + index1 + "-" + index2 + ") (" + x + ", " + y + ", " + z + ")";
-            return name + " (" + index1 + "-" + index2 + ") (" + x + ", " + y + ", " + z + ")";
+            return name + "@" + robot_name + " (" + index1 + "-" + index2 + ") (" + x + ", " + y + ", " + z + ")";
         }
     }
 }

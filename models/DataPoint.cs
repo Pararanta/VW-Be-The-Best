@@ -2,7 +2,7 @@ using System;
 
 namespace VW.Models
 {
-    class DataPoint
+    public class DataPoint
     {
         public float x;
         public float y;

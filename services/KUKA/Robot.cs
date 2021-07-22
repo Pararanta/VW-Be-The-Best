@@ -11,13 +11,13 @@ using VW.Models;
 
 namespace VW.Service.KUKA
 {
-    class Robot
+    public class Robot
     {
-        Dictionary<int, UP> ups = new Dictionary<int, UP>();
-        Dictionary<int, Folgen> folgens = new Dictionary<int, Folgen>();
-        string name = "";
-        public void readBackup(string path){
-            name = path;
+        public Dictionary<int, UP> ups = new Dictionary<int, UP>();
+        public Dictionary<int, Folgen> folgens = new Dictionary<int, Folgen>();
+        public string name = "";
+        public Robot(string path){
+            name = Path.GetFileNameWithoutExtension(path).ToUpper();
             using (ZipArchive archive = ZipFile.OpenRead(path))
             {
                 foreach (ZipArchiveEntry entry in archive.Entries)
@@ -26,7 +26,7 @@ namespace VW.Service.KUKA
                     if(entry.FullName.StartsWith("KRC/R1/UPs")){
                         string[] file_data = entry.Name.Split('.');
                         int key = int.Parse(Regex.Replace(file_data[0], "[^.0-9]", ""));
-                        if(!ups.ContainsKey(key)) ups.Add(key, new UP());
+                        if(!ups.ContainsKey(key)) ups.Add(key, new UP(name));
                         if(file_data[1] == "src") ups[key].loadProgram(entry.Open());
                         if(file_data[1] == "dat") ups[key].loadData(entry.Open());
                     }
@@ -47,7 +47,7 @@ namespace VW.Service.KUKA
             List<Point> result = new List<Point>();
             foreach(var up in ups)
             {
-                result.AddRange(up.Value.getPoints(name, 0));
+                result.AddRange(up.Value.getPoints());
             }
             return result;
         }
