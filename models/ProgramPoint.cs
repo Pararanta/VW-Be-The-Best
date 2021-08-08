@@ -2,7 +2,7 @@ using System;
 
 namespace VW.Models
 {
-    class ProgramPoint
+    public class ProgramPoint
     {
         public string index1;
         public string index2;

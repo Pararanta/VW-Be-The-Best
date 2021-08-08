@@ -2,7 +2,7 @@ using System;
 
 namespace VW.Models
 {
-    class Qualitative_point_result
+    public class Qualitative_point_result
     {
         public Deviation_massage deviation_massage;
         public Point point;

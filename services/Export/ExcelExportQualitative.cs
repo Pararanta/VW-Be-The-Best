@@ -17,9 +17,9 @@ using NPOI.SS.UserModel;
 
 namespace VW.Service.Export
 {
-    class Excel_Export_Qualitative{
+    public class Excel_Export_Qualitative{
 
-         public static void writeQualitative(Qualitative_compare qualitative_result_obj){
+         public static void writeQualitative(Qualitative_compare qualitative_result_obj, string path){
             
 
             XSSFWorkbook workbook = new XSSFWorkbook();
@@ -27,7 +27,7 @@ namespace VW.Service.Export
 
             List<Qualitative_point_result> quali_list_res = qualitative_result_obj.qualitative_list_result;
 
-            ISheet sheet = workbook.CreateSheet("My sheet");
+            ISheet sheet = workbook.CreateSheet("Report");
 
             IDataFormat dataformat = workbook.CreateDataFormat();
             ICellStyle style = workbook.CreateCellStyle();
@@ -163,7 +163,7 @@ namespace VW.Service.Export
 for (int i = 0; i <= 20; i++) sheet.AutoSizeColumn(i);
 
 
-            using (FileStream stream = new FileStream("./outfile.xlsx", FileMode.Create, FileAccess.Write))
+            using (FileStream stream = new FileStream(path, FileMode.Create, FileAccess.Write))
             {
                 workbook.Write(stream);
             } 

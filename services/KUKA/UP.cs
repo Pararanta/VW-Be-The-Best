@@ -10,12 +10,14 @@ using VW.Models;
 
 namespace VW.Service.KUKA
 {
-    class UP
+    public class UP
     {
         Dictionary<int, DataPoint> data_points = new Dictionary<int, DataPoint>();
         List<ProgramPoint> program_points = new List<ProgramPoint>();
 
         public string comment;
+        public string robot_name;
+        public bool include = false;
 
         Regex program_comment_regex = new Regex(@"(?<=&COMMENT ).*", RegexOptions.IgnoreCase);
         Regex name_regex = new Regex("(?<=M_COMMENT\\(\")(?!INDEX).+(?=\"\\))", RegexOptions.IgnoreCase);
@@ -26,6 +28,11 @@ namespace VW.Service.KUKA
         Regex data_point_x_regex = new Regex(@"(?<=X )[-\d\.]*(?=,)", RegexOptions.IgnoreCase);
         Regex data_point_y_regex = new Regex(@"(?<=Y )[-\d\.]*(?=,)", RegexOptions.IgnoreCase);
         Regex data_point_z_regex = new Regex(@"(?<=Z )[-\d\.]*(?=,)", RegexOptions.IgnoreCase);
+
+        public UP(string _robot_name)
+        {
+            robot_name = _robot_name;
+        }
 
         public void loadProgram(Stream file){
             using (var stream = new StreamReader(file)) {
@@ -74,14 +81,14 @@ namespace VW.Service.KUKA
             }
         }
 
-        public List<Point> getPoints(string robot_name, int robot_type){
+        public List<Point> getPoints(){
             List<Point> result = new List<Point>();
             foreach(ProgramPoint program_point in program_points){
                 if(!data_points.ContainsKey(program_point.data_point_index)){
                     Console.WriteLine("Missing data P" + program_point.data_point_index + " for point " + program_point.name);
                     continue;
                 }
-                result.Add(new Point(program_point, data_points[program_point.data_point_index], robot_name, robot_type));
+                result.Add(new Point(program_point, data_points[program_point.data_point_index], robot_name, 0));
             }
             return result;
         }

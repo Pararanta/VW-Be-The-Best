@@ -6,10 +6,17 @@ using System.Collections.Generic;
 
 namespace VW.Service.Export
 {
+<<<<<<< HEAD
     class Qualitative_compare{
         public static string warning_massage = "warning";
         public static string error_massage = "error";
         public static string normal_massage = "OK";
+=======
+    public class Qualitative_compare{
+        public static string warning_massage = "ostrzeżenie";
+        public static string error_massage = "błąd";
+        public static string normal_massage = "w granicach błędu";
+>>>>>>> 113abbd9384b8e196c0b70052a8e324eb8a3c3db
         public static float warning_distance = 5F;//mm
         public static float error_distance = 8F;//mm
         public int error_counter = 0;

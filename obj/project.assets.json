@@ -490,24 +490,31 @@
     ]
   },
   "packageFolders": {
-    "/home/kubano/.nuget/packages/": {}
+    "C:\\Users\\Konrad\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kubano/Downloads/VW-Be-The-Best/VW.csproj",
+      "projectUniqueName": "C:\\Users\\Konrad\\Desktop\\VW\\VW.csproj",
       "projectName": "VW",
-      "projectPath": "/home/kubano/Downloads/VW-Be-The-Best/VW.csproj",
-      "packagesPath": "/home/kubano/.nuget/packages/",
-      "outputPath": "/home/kubano/Downloads/VW-Be-The-Best/obj/",
+      "projectPath": "C:\\Users\\Konrad\\Desktop\\VW\\VW.csproj",
+      "packagesPath": "C:\\Users\\Konrad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Konrad\\Desktop\\VW\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/kubano/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Konrad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -546,16 +553,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/kubano/dotnet/sdk/6.0.100-preview.6.21355.2/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.2.21155.3\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /home/kubano/Downloads/VW-Be-The-Best/obj/project.nuget.cache : Unexpected character encountered while parsing value: <. Path '', line 0, position 0."
-    }
-  ]
+  }
 }

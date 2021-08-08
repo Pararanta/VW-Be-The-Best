@@ -15,7 +15,7 @@ using VW.Models;
 
 namespace VW.Service
 {
-    class UAF
+    public class UAF
     {
         public static List<Point> readUAF(string path){
             List<Point> result = new List<Point>();
@@ -39,6 +39,7 @@ namespace VW.Service
                 if(index.Length > 1) index2 = index[1];
                 string original_name = sheet.GetRow(row).GetCell(3).StringCellValue;
                 string name = Regex.Replace(original_name.Replace(Regex.Replace(sheet.GetRow(row).GetCell(0).StringCellValue, "\\.", "_"), ""), "_", "");
+                string robot_name = sheet.GetRow(row).GetCell(59).StringCellValue;
                 result.Add(new Point(
                     x,
                     y,
@@ -47,7 +48,7 @@ namespace VW.Service
                     index2,
                     name,
                     original_name,
-                    "",
+                    robot_name,
                     0
                 ));
             }

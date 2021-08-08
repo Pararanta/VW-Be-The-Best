@@ -2,7 +2,7 @@ using System;
 
 namespace VW.Models
 {
-    class Deviation_massage
+    public class Deviation_massage
     {
         public double point_deviation;
         public string massage;

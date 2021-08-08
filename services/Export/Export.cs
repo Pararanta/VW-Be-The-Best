@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace VW.Service.Export
 {
-    class Export
+    public class Export
     {
 
         public Dictionary<string,List<Point>> excel_dic = new Dictionary<string,List<Point>>();
